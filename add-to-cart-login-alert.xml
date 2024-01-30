@@ -1,0 +1,127 @@
+<modification>
+
+	<id>Add to cart login alert</id>
+	<version>1.5.1.1</version>
+	<vqmver>1.0</vqmver>
+	<author>spitos</author>
+
+	<file name="catalog/view/theme/default/template/account/wishlist.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/module/bestseller.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/module/featured.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/module/latest.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/module/special.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/category.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/compare.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/manufaturer_info.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/product.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+			<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/search.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/default/template/product/special.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a>
+			]]></search>
+			<add><![CDATA[
+			<?php if($this->customer->isLogged()){ ?><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a><?php }else{ ?><a onclick="alert('Please Login to View Prices and Add to Cart!');" class="button"><span><?php echo $button_cart; ?></span></a><?php } ?>
+			]]></add>
+		</operation>
+	</file>
+
+</modification>
